@@ -1,0 +1,12 @@
+{
+  "name": "personal-website-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.js",
+    "build": "vite build"
+  },
+  "dependencies": { "react": "^19.0.0", "react-dom": "^19.0.0" },
+  "devDependencies": { "vite": "^7.0.0" }
+}

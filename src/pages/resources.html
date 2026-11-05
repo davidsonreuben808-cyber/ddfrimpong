@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d4f">
+  <meta name="description" content="Browse study resources by college, programme, semester, or course code.">
+  <title>DD FRIMPONG | Course Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <a class="brand" href="index.html">DD FRIMPONG</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span></button>
+  <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a><a href="resources.html">Resources</a><a href="updates.html">Projects</a><a href="community.html">Community</a>
+    <a class="nav-cta" href="https://whatsapp.com/channel/0029VbD3Kqt0AgWL2kakmv22" target="_blank" rel="noreferrer">Join channel ↗</a>
+  </nav>
+</header>
+<main id="main-content">
+  <section class="inner-hero resources-hero">
+    <div class="inner-hero-copy">
+      <p class="eyebrow">Study support & course materials</p>
+      <h1>Course<br><em>Library.</em></h1>
+      <p>Browse the collection by college, course, or semester. Search by programme, course code, or topic.</p>
+      <a class="button button-gold" href="#resources-grid">Find a resource ↓</a>
+    </div>
+    <div class="inner-hero-image resource-placeholder"><img src="/assets/dd-frimpong-formal.jpeg" alt="DD FRIMPONG wearing a white shirt and blue gold tie" fetchpriority="high"><span>DD FRIMPONG</span></div>
+    <span class="inner-hero-index">COURSES · NOTES · STUDY GUIDES / 01</span>
+  </section>
+  <section class="resource-browser section" id="resources-grid">
+    <div class="section-heading"><div><p class="eyebrow">Browse by college and course</p><h2>Find your<br><em>next resource.</em></h2></div><p class="section-intro">Search by programme, college, semester, course code, or topic. Add your course links to each entry.</p></div>
+    <div class="resource-controls">
+      <label class="search-box"><span>⌕</span><input type="search" id="resource-search" placeholder="Search programme, course code, or topic…" aria-label="Search programmes and course resources"></label>
+      <label class="filter-label"><span>College</span><select id="college-filter" aria-label="Filter by college"><option value="all">All colleges</option><option value="cbas">Basic & Applied Sciences</option><option value="chs">Health Sciences</option><option value="humanities">Humanities & Education</option></select></label>
+      <label class="filter-label"><span>Semester</span><select id="semester-filter" aria-label="Filter by semester"><option value="all">All semesters</option><option value="1">1st semester</option><option value="2">2nd semester</option><option value="both">Both semesters</option></select></label>
+    </div>
+    <p class="results-note" id="resource-count" aria-live="polite"></p>
+    <div class="resource-grid" id="resource-cards">
+      <article class="resource-card" data-search="cbas college basic applied sciences chemistry chem 113 general chemistry level 100 programme lecture slides passco" data-college="cbas" data-semester="1"><div class="resource-card-top"><span class="course-mark">CBAS</span><span class="semester-tag">1st semester</span></div><p class="eyebrow">College of Basic & Applied Sciences</p><h3>CHEM 113<br>General Chemistry I</h3><p>Introductory chemistry materials and course review.</p><div class="resource-tags"><span>Lecture slides</span><span>PASSCO</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="cbas college basic applied sciences mathematics math 123 level 100 programme notes practice questions" data-college="cbas" data-semester="1"><div class="resource-card-top"><span class="course-mark">CBAS</span><span class="semester-tag">1st semester</span></div><p class="eyebrow">College of Basic & Applied Sciences</p><h3>MATH 123<br>Mathematics</h3><p>Course notes, worked examples, and practice questions.</p><div class="resource-tags"><span>Study pack</span><span>Practice</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="cbas college basic applied sciences organic chemistry level 100 second semester programme revision past questions" data-college="cbas" data-semester="2"><div class="resource-card-top"><span class="course-mark">CBAS</span><span class="semester-tag">2nd semester</span></div><p class="eyebrow">College of Basic & Applied Sciences</p><h3>Organic Chemistry<br>Revision</h3><p>Revision material and past questions for organic chemistry.</p><div class="resource-tags"><span>Revision notes</span><span>PASSCO</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="cbas college basic applied sciences biological sciences biology programme lecture notes passco" data-college="cbas" data-semester="both"><div class="resource-card-top"><span class="course-mark">CBAS</span><span class="semester-tag">Both semesters</span></div><p class="eyebrow">College of Basic & Applied Sciences</p><h3>Biological Sciences<br>Study Pack</h3><p>Core study notes and past questions for biological sciences.</p><div class="resource-tags"><span>Study notes</span><span>PASSCO</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="chs college health sciences medical biochemistry biochemistry programme revision guide" data-college="chs" data-semester="both"><div class="resource-card-top"><span class="course-mark">CHS</span><span class="semester-tag">Both semesters</span></div><p class="eyebrow">College of Health Sciences</p><h3>Medical<br>Biochemistry</h3><p>Study guides and revision material for biochemistry.</p><div class="resource-tags"><span>Study guides</span><span>Revision</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="chs college health sciences anatomy diagrams programme first semester revision" data-college="chs" data-semester="1"><div class="resource-card-top"><span class="course-mark">CHS</span><span class="semester-tag">1st semester</span></div><p class="eyebrow">College of Health Sciences</p><h3>Anatomy<br>Diagrams</h3><p>Visual study material and structured anatomy revision.</p><div class="resource-tags"><span>Diagrams</span><span>Study guide</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="chs college health sciences physiology programme second semester revision packs" data-college="chs" data-semester="2"><div class="resource-card-top"><span class="course-mark">CHS</span><span class="semester-tag">2nd semester</span></div><p class="eyebrow">College of Health Sciences</p><h3>Physiology<br>Revision Pack</h3><p>Topic summaries and revision material for physiology.</p><div class="resource-tags"><span>Revision pack</span><span>Exam prep</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="humanities education college ugrc 150 critical thinking programme first semester summaries grading guides" data-college="humanities" data-semester="1"><div class="resource-card-top"><span class="course-mark">HUM</span><span class="semester-tag">1st semester</span></div><p class="eyebrow">College of Humanities & Education</p><h3>UGRC 150<br>Critical Thinking</h3><p>Course summaries and study material for critical thinking.</p><div class="resource-tags"><span>Study summaries</span><span>Guides</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="humanities education college academic writing programme writing communication first semester notes" data-college="humanities" data-semester="1"><div class="resource-card-top"><span class="course-mark">HUM</span><span class="semester-tag">1st semester</span></div><p class="eyebrow">College of Humanities & Education</p><h3>Academic<br>Writing</h3><p>Writing guides, summaries, and supporting course notes.</p><div class="resource-tags"><span>Writing guides</span><span>Notes</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+      <article class="resource-card" data-search="humanities education college economics fundamentals programme second semester exam guide" data-college="humanities" data-semester="2"><div class="resource-card-top"><span class="course-mark">HUM</span><span class="semester-tag">2nd semester</span></div><p class="eyebrow">College of Humanities & Education</p><h3>Economics<br>Fundamentals</h3><p>Course review material and exam preparation guides.</p><div class="resource-tags"><span>Course notes</span><span>Exam prep</span></div><a class="resource-link" href="#library-note">Add course folder ↗</a></article>
+    </div>
+    <div id="empty-state" class="empty-state" hidden>No matching resources. Try another programme, college, semester, course code, or topic.</div>
+    <p class="library-note" id="library-note"><span>✳</span> These are starter course listings. Add your Drive folders or other resource links to each card.</p>
+  </section>
+  <section class="resource-guide"><div class="section"><div class="section-heading"><div><p class="eyebrow">A simple study workflow</p><h2>Find it.<br><em>Plan it.</em></h2></div></div><div class="tips-grid"><div><span>01</span><h3>Choose your college</h3><p>Filter the collection to see resources relevant to your area of study.</p></div><div><span>02</span><h3>Search by course</h3><p>Enter a course code, programme, semester, or topic to narrow your results.</p></div><div><span>03</span><h3>Open a resource</h3><p>Add your course folder links to the cards so students can access the materials.</p></div></div></div></section>
+</main>
+<footer class="site-footer"><div><a class="brand" href="index.html">DD FRIMPONG</a><p>Study support and course resources.<br>Make this library useful.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="updates.html">Projects</a><a href="community.html">Community</a></div><div class="footer-bottom"><span>Your city · Your country</span><span>DD FRIMPONG · Course Library</span><a href="#main-content">Back to top ↑</a></div></footer>
+</body>
+</html>
